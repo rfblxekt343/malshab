@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'SecularOne-Regular';
+  src: url('./assets/Fonts/SecularOne-Regular.ttf');  
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+*{
+  font-family:'SecularOne-Regular';
+    overflow: hidden;
+}
+#open-screen{
+  background-image:url('./assets/media/סימולטור מלשבים מסך פתיחה.jpeg');
+  background-size:cover;
+  width: 100vw;
+  height: 100vh;
+}
+#app {
+ 
+  background: linear-gradient(135deg, #d29c76, #e1b182);
+    height: 100vh; 
+    width: 100vw; 
+    overflow: hidden; 
+  }
+  
+.video-player{
+  width: 60vw;
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.red-overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent red color */
+    z-index: 1; /* Ensure the overlay is on top of the video */
+  }
+
+
+  #timer {
+    direction: rtl;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    text-align: center;
+    background-color: #f8f8f8; /* Light gray background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  #timer button {
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #e6a46a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  #timer button:hover {
+    background-color: #f4c084; /* Lighter shade when hovered */
+  }
+  
+  #timer p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333; /* Dark text color */
+  }
+  
+
+  .siren {
+    top: 30%;
+    position: absolute;
+    right: 75%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .siren h1 {
+    direction: rtl;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .siren button {
+    padding: 10px 20px;
+    background-color:#9AD0C2;    ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .siren button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .siren img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px;
+  }
+  .video-container {
+    position: relative;
+  }
+  
+
+  .user-grade {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .user-grade p {
+    text-align: right ;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  #desicion{
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    background-color: wheat;
+    border-radius: 10px;
+
+  }
+  #decision-making {
+    text-align: center;
+    background-color: #e6a46a;
+    border-radius: 10px;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    width: 20%;
+    padding: 20px; /* Add padding for better spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  }
+  
+  #decision-making h1 {
+    color: white; /* Set text color to white */
+    font-family: 'Quicksand', sans-serif; /* Apply font-family */
+  }
+  
+  #decision-making ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  #decision-making li {
+    margin-bottom: 10px; /* Add margin between buttons */
+  }
+  
+  #decision-making button {
+    padding: 10px 20px;
+    background-color: #9ad0c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif; /* Apply font-family */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  #decision-making button:hover {
+    background-color: #7fbcb0; /* Darker shade when hovered */
+  }
+  
+
+/* OpenScreen.css */
+#play-icon {
+  position: absolute;
+  width: 70px;
+  height: 100px;
+  left: 50%;
+  bottom: 33%;
+  color: white;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+#play-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color:#FAD6A6;
+}
